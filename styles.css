@@ -1,11 +1,11 @@
-body{
+#body{
     background-image: url(pics/hatter/adam-patterson-v13x0qU4afA-unsplash.jpg);
+}
+#bodyfo{
+    background-color: burlywood;
 }
 #feher{
     color: white;
     background: rgba(0, 0, 0, 0.75);
     border-radius: 5%;
-}
-#header{
-    background-image: url(pics/hatter/nathan-dumlao-J2gEgTPM_OA-unsplash.jpg);
 }
