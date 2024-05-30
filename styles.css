@@ -6,6 +6,8 @@
 }
 #feher{
     color: white;
-    background: rgba(0, 0, 0, 0.75);
-    border-radius: 5%;
+}
+.logo{
+    height: 3%;
+    width: 3%;
 }
