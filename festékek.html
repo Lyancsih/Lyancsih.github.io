@@ -10,7 +10,7 @@
   <!-- Saját stílusok -->
   <link href="styles.css" rel="stylesheet">
 </head>
-<body>
+<body style="background-image: url(pics/hatter/adam-patterson-v13x0qU4afA-unsplash.jpg);">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
@@ -38,7 +38,7 @@
       </nav>
 
 <div class="container mt-4">
-  <h1 class="text-center mb-4">Termék katalógus</h1>
+  <h1 class="text-center mb-4" class="cim">Termék katalógus</h1>
   <div class="row">
     <div class="col-md-4 mb-4">
       <div class="card">
@@ -52,7 +52,7 @@
             <li>Kiadósság: 9 m2/liter/réteg</li>
             </ul>
           </p>
-          <a href="#" class="btn btn-primary">Részletek</a>
+          <a href="#" class="btn btn-primary" onclick="showMessageBox()">Vásárlás</a>
         </div>
       </div>
     </div>
@@ -68,7 +68,7 @@
               <li>Sokrétűen felhasználható</li>
             </ul>
           </p>
-          <a href="#" class="btn btn-primary">Részletek</a>
+          <a href="#" class="btn btn-primary" onclick="showMessageBox()">Vásárlás</a>
         </div>
       </div>
     </div>
@@ -83,7 +83,7 @@
               <li>A kültéri változatok védik a fát a gombásodás és az UV sugárzás ellen</li>
             </ul>
           </p>
-          <a href="#" class="btn btn-primary">Részletek</a>
+          <a href="#" class="btn btn-primary" onclick="showMessageBox()">Vásárlás</a>
         </div>
       </div>
     </div>
@@ -99,7 +99,7 @@
               <li>Rugalmas felületet képez</li>
             </ul>
           </p>
-          <a href="#" class="btn btn-primary">Részletek</a>
+          <a href="#" class="btn btn-primary" onclick="showMessageBox()">Vásárlás</a>
         </div>
       </div>
     </div>
@@ -115,7 +115,7 @@
               <li>CO-2 záróképesség</li>
             </ul>
           </p>
-          <a href="#" class="btn btn-primary">Részletek</a>
+          <a href="#" class="btn btn-primary" onclick="showMessageBox()">Vásárlás</a>
         </div>
       </div>
     </div>
@@ -131,7 +131,7 @@
               <li>Kiválóan tapad a felülethez</li>
             </ul>
           </p>
-          <a href="#" class="btn btn-primary">Részletek</a>
+          <a href="#" class="btn btn-primary" onclick="showMessageBox()">Vásárlás</a>
         </div>
       </div>
     </div>
@@ -142,12 +142,25 @@
   <div class="container">
     <p>&copy; 2024 Barkácsbolt - Minden jog fenntartva</p>
   </div>
+
+<div id="messageBox">
+    <p>Raktár Hiány</p>
+    <button id="closeButton" onclick="hideMessageBox()">Bezárás</button>
+</div>
 </footer>
 
 <!-- Bootstrap JS, a Popper.js, és a jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>        
+  function showMessageBox() {
+    document.getElementById('messageBox').style.display = 'block';
+  }
+  
+  function hideMessageBox() {
+    document.getElementById('messageBox').style.display = 'none';
+  }</script>
 
 </body>
 </html>
